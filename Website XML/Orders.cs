@@ -42,6 +42,8 @@ namespace WebsiteXMLImport
 
                 order.CustomerNo = xmlorder.Customer_Number;
                 order.CustomerPONo = "Website-" + xmlorder.OrderId;
+
+                order.BillToCompany = xmlorder.BillingCompany;
                 
                 foreach (OrderLineItems xmlline in xmlorder.Items)
                 {

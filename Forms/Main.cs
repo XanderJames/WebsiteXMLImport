@@ -48,7 +48,10 @@ namespace WebsiteXMLImport
             {
                 if (order.CustomerNo == string.Empty)
                 {
-                    using (UserEntry EntryDialog = new UserEntry("Please input a CustomerNo", "A CustomerNo was not found in the file."))
+                    using (UserEntry EntryDialog = new UserEntry("Please input a CustomerNo", 
+                        "A CustomerNo was not found in the file." + 
+                        Environment.NewLine + 
+                        "[Order #]: " + order.CustomerPONo + " [Bill To Company]: " + order.BillToCompany))
                     {
                         if (EntryDialog.ShowDialog() == DialogResult.OK)
                         {

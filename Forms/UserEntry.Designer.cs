@@ -36,7 +36,7 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(172, 61);
+            this.btnOK.Location = new System.Drawing.Point(169, 88);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // txtInput
             // 
-            this.txtInput.Location = new System.Drawing.Point(72, 35);
+            this.txtInput.Location = new System.Drawing.Point(71, 62);
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(263, 20);
             this.txtInput.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             this.lblMessage.Location = new System.Drawing.Point(12, 9);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(383, 23);
+            this.lblMessage.Size = new System.Drawing.Size(383, 50);
             this.lblMessage.TabIndex = 2;
             this.lblMessage.Text = "label1";
             this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -64,7 +64,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 95);
+            this.ClientSize = new System.Drawing.Size(407, 123);
             this.ControlBox = false;
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.txtInput);
