@@ -68,11 +68,15 @@ namespace WebsiteXMLImport
             XmlSerializer serializer = new XmlSerializer(typeof(Config));
             Config oConfig = new Config();
 
-            using (FileStream fs = new FileStream(ConfigFile, FileMode.Open))
+            if (File.Exists(ConfigFile))
             {
-                oConfig = (Config)serializer.Deserialize(fs);
-                return oConfig;
+                using (FileStream fs = new FileStream(ConfigFile, FileMode.Open))
+                {
+                    oConfig = (Config)serializer.Deserialize(fs);
+                }
             }
+
+            return oConfig;
         }
 
 
